@@ -24,7 +24,7 @@ function justDoIt()
    decimal: ","
   };
   
-  $("#aktier thead .bottomRow th:nth-child(8)").text("Kjøpsverdi");
+  $("#aktier thead .bottomRow th:nth-child(8)").text("KjÃ¸psverdi");
   $("#aktier thead .bottomRow th:nth-child(9)").text("Markedsverdi");
   
   var profitKolonne = $("#aktier tbody td:nth-child(11)");
