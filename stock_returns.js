@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nordnet Norden Historic Return
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Pick the most solid companies and mark them green. Second most yellow.
 // @author       Avec
 // @match        https://www.nordnet.no/mux/web/marknaden/kurslista/aktier.html*subtyp=historic_return*
@@ -12,7 +12,7 @@
 
 // Cells in table
 // ----------------------------------------------------------------------------------
-// | I dag	| En uke | En måned	| 3 måneder	| 6 måneder	| 1 år | 2 år |	3 år | 5 år |
+// | I dag	| En uke | En mÃ¥ned	| 3 mÃ¥neder	| 6 mÃ¥neder	| 1 Ã¥r | 2 Ã¥r |	3 Ã¥r | 5 Ã¥r |
 // ----------------------------------------------------------------------------------
 // |     2  |      3 |        4 |         5 |         6 |    7 |    8 |    9 |   10 |
 // ----------------------------------------------------------------------------------
@@ -25,7 +25,7 @@
     var cellCount = 6; // Choose how many cells you will display (match). I.e. firstCell is 5 and countCell is 6. Then you will use cells 5 to 10
     var positiveColor = '#80ff00';
     var negativeColor = 'pink';
-    var requiredPositiveIncreaseFactor = 0.30; // 0.1 equals 10%. This kinda says somthing about the trendline. Higher value steper trend. Also fewer matches.
+    var requiredPositiveIncreaseFactor = 0.25; // 0.1 equals 10%. This kinda says somthing about the trendline. Higher value steper trend. Also fewer matches.
 
     // ********************************************************************************************************************************
 
@@ -45,12 +45,11 @@
        // console.log(j+": current = " + current +", value = " + value);
 
         if(current*(requiredPositiveIncreaseFactor+1) < value) {
-            current = value;
             $(this).css("background-color", positiveColor);
         } else {
             $(this).css("background-color", negativeColor);
         }
-
+        current = value;
         nextCell++;
 
     });
