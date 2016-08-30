@@ -32,8 +32,8 @@ Go to nordnet -> Aksjer -> Aksjekurser -> Avkastning (sorry only know the Norweg
 #### Colors
 * Green is good as the returns is as required (configurable).
 * Yellow means the required returns for the forth and fifth year is not as good as expected. It could be the fourth or fifth year or maybe both. Yellow is better than red.
-* Red cell with a positive value means the expected returns for the current period is less than required. 
-* Red cell with a negative value is not good and the user must be very cautious considering the company.  
+* Pink cell with a positive value means the expected returns for the current period is less than required. 
+* Pink cell with a negative value is not good and the user must be very cautious considering the company.  
 * The green and pink colors can be configured. 
 
 #### Icons
