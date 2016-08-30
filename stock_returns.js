@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nordnet Norden Historic Return
 // @namespace    https://github.com/Avec112/MonkeyScripts
-// @version      0.6
+// @version      0.7
 // @description  Pick the most solid companies and mark them with appropriate icon
 // @author       Avec
 // @match https://www.nordnet.no/mux/web/marknaden/kurslista/aktier.html*subtyp=historic_return*
@@ -9,6 +9,8 @@
 // @require http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 // @require https://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.min.js
 // @grant        GM_addStyle
+// @updateURL    https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/stock_returns.js
+// @downloadURL  https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/stock_returns.js
 // ==/UserScript==
 
 // Cells in table
