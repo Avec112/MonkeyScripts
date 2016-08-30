@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nordnet Norden Historic Return
-// @namespace    http://tampermonkey.net/
-// @version      0.5
+// @namespace    https://github.com/Avec112/MonkeyScripts
+// @version      0.6
 // @description  Pick the most solid companies and mark them with appropriate icon
 // @author       Avec
 // @match https://www.nordnet.no/mux/web/marknaden/kurslista/aktier.html*subtyp=historic_return*
