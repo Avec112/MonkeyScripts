@@ -4,11 +4,22 @@ Scripts to manipulate/tamper webpages @ Nordnet as you see fit. The scripts must
 
 The scripts here only work with http://www.nordnet.no (or se, dk or fi)
 
+## Install
+Tampermonkey is what the developer preferes for different reasons so this is what will be recommended. 
+We will install Tampermonkey in Chrome, Firefox, Opera or Safari as an addon. You know your own browser.
+* Go to [](https://tampermonkey.net/) and click the download button and follow the instructions
+* Go to the script you want to install and copy content to clipboard. I.e [https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/stock_returns.js](https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/stock_returns.js) (Alt+a, Alt+c on Mac, CTRL+A, CTRL+C on Windows)
+* After install click the Tampermonkey icon in your browser and click on the dashboard
+* Look for the green plus and click it to add a new script
+* Mark all content of the default script with the mouse or Alt+A or CTRL+A, then paste from clipboard with Alt+V or CTRL+V)
+* Click save
+* The script should now work when you visit the page where the script is supposed to function
+
 ## Portfolio script
 Information will come later.
 
 ## Stock returns
-Great script to better display rock solid companies and the not so solid ones. 
+Script to better display rock solid companies and the not so solid ones. 
 ![](https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/stock_returns.png)
 
 ### Where it works
