@@ -5,8 +5,10 @@
 // @include     https://www.nordnet.no/mux/web/depa/mindepa/depaoversikt.html#
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 // @require     https://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.min.js
-// @version     1.2
+// @version     1.3
 // @grant       GM_log
+// @updateURL    https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/portfolio_calculations.js
+// @downloadURL  https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/portfolio_calculations.js
 // ==/UserScript==
 
 //this.$ = this.jQuery = jQuery.noConflict(true);
