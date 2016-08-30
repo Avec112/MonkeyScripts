@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name        nordnet
-// @namespace   avec112@gmail.com
+// @namespace   https://github.com/Avec112/MonkeyScripts
 // @include     https://www.nordnet.no/mux/web/depa/mindepa/depaoversikt.html
 // @include     https://www.nordnet.no/mux/web/depa/mindepa/depaoversikt.html#
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 // @require     https://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.min.js
-// @version     1.1
+// @version     1.2
 // @grant       GM_log
 // ==/UserScript==
 
