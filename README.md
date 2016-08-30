@@ -4,9 +4,11 @@ Scripts to manipulate/tamper webpages @ Nordnet as you see fit. The scripts must
 
 The scripts here only work with http://www.nordnet.no (or se, dk or fi)
 
+---
+
 ## Install
 Tampermonkey is what the developer preferes for different reasons so this is what will be recommended. 
-We will install Tampermonkey in Chrome, Firefox, Opera or Safari as an addon. You know your own browser.
+Install Tampermonkey in Chrome, Firefox, Opera or Safari as an addon. You know your own browser.
 * Go to [](https://tampermonkey.net/) and click the download button and follow the instructions
 * Go to the script you want to install and copy content to clipboard. I.e [https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/stock_returns.js](https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/stock_returns.js) (Alt+a, Alt+c on Mac, CTRL+A, CTRL+C on Windows)
 * After install click the Tampermonkey icon in your browser and click on the dashboard
@@ -15,11 +17,19 @@ We will install Tampermonkey in Chrome, Firefox, Opera or Safari as an addon. Yo
 * Click save
 * The script should now work when you visit the page where the script is supposed to function
 
-## Portfolio script
-Information will come later.
+---
 
-## Stock returns
+## Portfolio calculations script
+More information to come
+
+### Where to find it
+[https://github.com/Avec112/MonkeyScripts/blob/master/portfolio_calculations.js](https://github.com/Avec112/MonkeyScripts/blob/master/portfolio_calculations.js)
+
+---
+
+## Stock returns script
 Script to better display rock solid companies and the not so solid ones. 
+
 ![](https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/stock_returns.png)
 
 ### Where it works
@@ -47,3 +57,6 @@ Go to nordnet -> Aksjer -> Aksjekurser -> Avkastning (sorry only know the Norweg
 * positiveColor = The color to display when requirement is meet. Green by default.
 * negativeColor = The color to display when the requirement is NOT met. Pink by default.
 * requiredPositiveIncreaseFactor = The required returns expected for each period. 0.1 equals 10%. 0.3 (30%) by default.
+
+### Where to find it
+[https://github.com/Avec112/MonkeyScripts/blob/master/stock_returns.js](https://github.com/Avec112/MonkeyScripts/blob/master/stock_returns.js)
