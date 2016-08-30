@@ -1,42 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
     <title>Monkeyscripts by Avec112</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-
-    <header>
-      <div class="container">
+    <div class="wrapper">
+      <header class="without-description">
         <h1>Monkeyscripts</h1>
-        <h2></h2>
-
-        <section id="downloads">
-          <a href="https://github.com/Avec112/MonkeyScripts/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/Avec112/MonkeyScripts/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/Avec112/MonkeyScripts" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
+        <p></p>
+        <p class="view"><a href="https://github.com/Avec112/MonkeyScripts">View the Project on GitHub <small>Avec112/MonkeyScripts</small></a></p>
+        <ul>
+          <li><a href="https://github.com/Avec112/MonkeyScripts/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Avec112/MonkeyScripts/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Avec112/MonkeyScripts">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
         <h1>
 <a id="monkeyscripts" class="anchor" href="#monkeyscripts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MonkeyScripts</h1>
 
-<p>Scripts for GreaseMonkey and TamperMonkey</p>
+<p>Scripts to manipulate/tamper webpages @ Nordnet as you see fit. The scripts must be used with <a href="http://www.greasespot.net/">Greasemonkey</a> or <a href="https://tampermonkey.net/">Tampermonkey</a> inside your browser (IE not supported).</p>
 
-<p>The only scripts here are for <a href="http://www.nordnet.xx">http://www.nordnet.xx</a> (no, se, dk and fi)</p>
+<p>The scripts here only work with <a href="http://www.nordnet.no">http://www.nordnet.no</a> (or se, dk or fi)</p>
+
+<h2>
+<a id="portfolio-script" class="anchor" href="#portfolio-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Portfolio script</h2>
+
+<p>Information will come later.</p>
+
+<h2>
+<a id="stock-returns" class="anchor" href="#stock-returns" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Stock returns</h2>
+
+<p>Great script to better display rock solid companies and the not so solid ones. 
+<img src="https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/stock_returns.png" alt=""></p>
+
+<h3>
+<a id="where-it-works" class="anchor" href="#where-it-works" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Where it works</h3>
+
+<p><code>https://www.nordnet.no/mux/web/marknaden/kurslista/aktier.html*subtyp=historic_return*</code></p>
+
+<p>Go to nordnet -&gt; Aksjer -&gt; Aksjekurser -&gt; Avkastning (sorry only know the Norwegian site)</p>
+
+<h3>
+<a id="how-it-works-colors-and-icons" class="anchor" href="#how-it-works-colors-and-icons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How it works (colors and icons)</h3>
+
+<h4>
+<a id="colors" class="anchor" href="#colors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Colors</h4>
+
+<ul>
+<li>Green is good as the returns is as required (configurable).</li>
+<li>Yellow means the required returns for the forth and fifth year is not as good as expected. It could be the fourth or fifth year or maybe both. Yellow is better than red.</li>
+<li>Red cell with a positive value means the expected returns for the current period is less than required. </li>
+<li>Red cell with a negative value is not good and the user must be very cautious considering the company.<br>
+</li>
+<li>The green and pink colors can be configured. </li>
+</ul>
+
+<h4>
+<a id="icons" class="anchor" href="#icons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Icons</h4>
+
+<ul>
+<li>Green icon (ok) is considered to be a safe choice since the company meets the required returns in all periods. Solid economy.</li>
+<li>Yellow icon (warn) is not meeting all the required returns in all periods. Choose these companies with care.<br>
+</li>
+<li>Red icon (fail) has negative returns in one or more periods. Not recommended or at lease choose with great care.<br>
+</li>
+</ul>
+
+<h4>
+<a id="configurable-parameteres" class="anchor" href="#configurable-parameteres" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configurable parameteres</h4>
+
+<ul>
+<li>firstCell = The first cell to meet the required returns</li>
+<li>cellCount = Choose how many cells you will display (match). I.e. firstCell is 5 and countCell is 6. Then you will use cells 5 to 10</li>
+<li>positiveColor = The color to display when requirement is meet. Green by default.</li>
+<li>negativeColor = The color to display when the requirement is NOT met. Pink by default.</li>
+<li>requiredPositiveIncreaseFactor = The required returns expected for each period. 0.1 equals 10%. 0.3 (30%) by default.</li>
+</ul>
       </section>
     </div>
-
+    <footer>
+      <p>Project maintained by <a href="https://github.com/Avec112">Avec112</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
