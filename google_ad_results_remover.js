@@ -6,6 +6,8 @@
 // @author       Avec
 // @include      https://*.google.*/*
 // @grant        GM_addStyle
+// @downloadURL  https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/google_ad_results_remover.js
+// @updateURL    https://raw.githubusercontent.com/Avec112/MonkeyScripts/master/google_ad_results_remover.js
 // ==/UserScript==
 
 
